@@ -1,0 +1,51 @@
+@import "reset";
+@import "variables";
+
+
+*{
+font-family: $mainFont;
+box-sizing: border-box;
+}
+  header{
+    background: $headerBG;
+    overflow: auto;
+    padding: 15px 20px;
+
+    .logo{
+      h1{
+      font-family: $mainFont;
+      display: inline-block;
+      //margin: 1px 10px 10px 10px;
+      color: white;
+      font-size: 1.3rem;
+      float: left;
+      font-size: 1.2rem;
+      }
+    }
+
+    .menu{
+      display: inline-block;
+      float: right;
+      ul{
+        li{
+          display: inline-block;
+          padding: 0px 10px;
+          a{
+            font-family: $mainFont;
+            font-weight: 300;
+            color: white;
+            text-decoration: none;
+          }
+        &:hover{
+          background: $topLeftBG;
+          transition-duration: 0.3s
+         }
+        }
+      }
+    }
+  }
+
+body{
+  h1{
+  }
+}
