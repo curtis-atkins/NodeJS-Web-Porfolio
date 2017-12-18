@@ -1,25 +1,32 @@
 @import "reset";
 @import "variables";
-
+@import "home";
+@import "grid";
+@import "global";
+@import "about";
 
 *{
 font-family: $mainFont;
 box-sizing: border-box;
 }
+body{
+  background: $bodyBG;
+}
   header{
     background: $headerBG;
+    width: 100%;
     overflow: auto;
     padding: 15px 20px;
-
+    position:fixed;
     .logo{
-      h1{
+      a{
       font-family: $mainFont;
       display: inline-block;
-      //margin: 1px 10px 10px 10px;
       color: white;
       font-size: 1.3rem;
       float: left;
       font-size: 1.2rem;
+      text-decoration: none;
       }
     }
 
@@ -45,7 +52,6 @@ box-sizing: border-box;
     }
   }
 
-body{
-  h1{
-  }
+.content-area{
+  padding-top: 48px;
 }

@@ -5,16 +5,16 @@ const pagesController = {};
 const aboutController = {};
 
 pagesController.home = (req, res) => {
-    res.render("pages/home")
+    res.render("pages/home");
 }
 
 pagesController.about = (req, res) => {
-    res.send("<h1>Hi. This is my About page</h1>")
+    res.render("pages/about");
 }
 
 
 pagesController.contact = (req, res) => {
-    res.send("<h1>Hi. This is my Contact page</h1>")
+    res.render("pages/contact");
 }
 
 module.exports = pagesController;

@@ -1,0 +1,45 @@
+@import "reset";
+@import "variables";
+
+
+.content-area{
+
+  .top-header{
+    display: flex;
+    height: calc(100vh - 48px);
+    .top-left{
+      background: $topLeftBG;
+      font-family: $mainFont;
+      width: 50%;
+      min-height: 500px;
+      height: 100vh;
+      float: left;
+      display:inline-block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px;
+      h1{
+        font-family: $displayFont;
+        font-size: 3rem;
+        color: white;
+      }
+    }
+    .top-right{
+      background: $topRightBG;
+      width:50%;
+      float: right;
+      display: inline-block;
+      height: 100vh;
+      min-height: 500px;
+      display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 20px;
+     img{
+       width: 100%;
+       max-width: 473px;
+     }
+    }
+  }
+}

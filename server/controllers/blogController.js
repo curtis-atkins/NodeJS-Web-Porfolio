@@ -3,7 +3,7 @@ const express = require("express");
 const blogController ={};
 
 blogController.index = (req, res) => {
-    res.send(`<h1>This is my Blog page</h1>`);
+    res.render("blog/index");
 }
 
 module.exports = blogController;
