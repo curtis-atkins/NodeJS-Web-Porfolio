@@ -4,10 +4,21 @@
 @import "grid";
 @import "global";
 @import "about";
+@import"projects/index";
 
 *{
 font-family: $mainFont;
 box-sizing: border-box;
+}
+
+h1{
+  font-family: $mainFont;
+  display: block;
+  flex-direction: column;
+  margin-bottom: .8rem;
+  text-align: center;
+  font-size: 2rem;
+  margin: 10px;
 }
 body{
   background: $bodyBG;
