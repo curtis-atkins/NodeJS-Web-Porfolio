@@ -3,9 +3,49 @@ const express = require("express");
 
 
 const projectsController ={};
+const projects = [
+  {
+    title: "Project 1",
+    tags: ["html", "css", "javascript", "php"],
+    date: "01/01/2018",
+    img: "/img/desktop.png"
+  },
+  {
+    title: "Project 2",
+    tags: ["html", "css", "javascript", "php"],
+    date: "01/01/2018",
+    img: "/img/desktop.png"
+  },
+  {
+    title: "Project 3",
+    tags: ["html", "css", "javascript", "php"],
+    date: "01/01/2018",
+    img: "/img/desktop.png"
+  },
+  {
+    title: "Project 4",
+    tags: ["html", "css", "javascript", "php"],
+    date: "01/01/2018",
+    img: "/img/desktop.png"
+  },
+  {
+    title: "Project 5",
+    tags: ["html", "css", "javascript", "php"],
+    date: "01/01/2018",
+    img: "/img/desktop.png"
+  },
+  {
+    title: "Project 6",
+    tags: ["html", "css", "javascript", "php"],
+    date: "01/01/2018",
+    img: "/img/desktop.png"
+  },
+]
 
 projectsController.index = (req, res) => {
-  res.render("projects/index")
+  res.render("projects/index", {
+    projects: projects
+  })
 }
 
 projectsController.create = (req, res) => {

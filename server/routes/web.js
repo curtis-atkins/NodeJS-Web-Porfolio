@@ -20,10 +20,10 @@ PROJECTS Routes
 router.get('/projects', projectsController.index);
 router.get('/projects/create', projectsController.create);
 router.post('/projects', projectsController.store);
-router.get('/projects/:id', projectsController.show);
-router.get('/projects/:id/edit', projectsController.edit);
-router.put('/projects/:id', projectsController.update);
-router.delete('/projects/id', projectsController.destroy);
+router.get('/projects/:title', projectsController.show);
+router.get('/projects/:title/edit', projectsController.edit);
+router.put('/projects/:title', projectsController.update);
+router.delete('/projects/title', projectsController.destroy);
 
 /*===================================================================
 Blog Route

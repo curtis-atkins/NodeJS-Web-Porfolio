@@ -8,14 +8,14 @@ block content
     h1 Show All Projects
 
     div(class="row")
-      div(class="col-md-4")
-        div(class="content-box")
-          div(class="project-img", style="background: url(/img/desktop.png) no-repeat center center; -webkit-background-size: cover;-moz-background-size:cover;-o-background-size: cover; background-size: cover; width: 100%; min-height: 300px")
-            div(class="inside")
-              div
-                h4 Project Title
-                div(class="tags")
-                  div(class="pill") #html
-                  div(class="pill") #css
-                  div(class="pill") #javascript
-                  div(class="pill") #php
+      each project in projects
+        div(class="col-md-4")
+          div(class="content-box")
+            div(class="project-img", style="background: url(" + project.img + ") no-repeat center center; -webkit-background-size: cover;-moz-background-size:cover;-o-background-size: cover; background-size: cover; width: 100%; min-height: 300px;")
+              div(class="inside")
+                div
+                  h4= project.title
+
+                  div(class="tags")
+                    each tag in project.tags
+                      div(class="pill") ##{tag}
