@@ -1,0 +1,24 @@
+.content-area {
+  .blog-page {
+    margin: 30px 0 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    h1 {
+      font-size: 2rem;
+      font-weight: 900;
+      font-family: $displayFont;
+      text-decoration: none;
+    }
+    .content-box {
+      .row{
+        .col-md-12{
+          a{
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}

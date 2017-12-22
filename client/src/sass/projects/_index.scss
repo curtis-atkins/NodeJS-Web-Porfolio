@@ -22,27 +22,34 @@
       align-items: center;
       justify-content: center;
       transition: all 0.5s ease-in-out;
+        a{
+          color: white;
+          text-decoration: none;
 
-      h4{
-        font-family: $mainFont;
-        display: block;
-        flex-direction: column;
-        margin-bottom: .8rem;
-        text-align: center;
-        font-size: 2rem;
-      }
-      .tags{
-        font-family: $displayFont;
-        display: block;
-        max-width: 70%;
-        margin: 0 auto;
-        text-align: center;
-        .pill{
-          display:inline-block;
-          background: $headerBG;
-          padding: 5px 10px;
-          border-radius: 4px;
-          margin: 4px;
+        h4{
+          font-family: $mainFont;
+          display: block;
+          flex-direction: column;
+          margin-bottom: .8rem;
+          text-align: center;
+          font-size: 2rem;
+          &:hover{
+            color: $linkHoverColor;
+          }
+        }
+        .tags{
+          font-family: $displayFont;
+          display: block;
+          max-width: 70%;
+          margin: 0 auto;
+          text-align: center;
+          .pill{
+            display:inline-block;
+            background: $headerBG;
+            padding: 5px 10px;
+            border-radius: 4px;
+            margin: 4px;
+          }
         }
       }
     }

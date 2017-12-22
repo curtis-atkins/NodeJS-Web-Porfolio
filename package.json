@@ -2,7 +2,7 @@
   "name": "nodejs",
   "version": "1.0.0",
   "description": "Curtis Atkins Web Portfolio Project",
-  "main": "index.js",
+  "main": "server.js",
   "directories": {
     "test": "test"
   },
