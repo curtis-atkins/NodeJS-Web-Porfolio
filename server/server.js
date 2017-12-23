@@ -4,6 +4,7 @@ const PORT = process.env.PORT || 3000;
 const webRoutes = require ("./routes/web.js");
 const pug = require("pug");
 const path = require("path");
+const dotenv = require("dotenv").config();
 
 app.use(express.static("client/public"));
 
@@ -15,5 +16,5 @@ app.set("views", path.join(__dirname, "../client/src/views"));
 app.use(webRoutes);
 
 app.listen(PORT, () => {
-  console.log(`server is running on port ${PORT}!`);
+  console.log(`server is running on port ${PORT}!` + process.env.DB_USERNAME);
 })
