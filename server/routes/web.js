@@ -29,6 +29,8 @@ router.delete('/projects/title', projectsController.destroy);
 Blog Route
 =====================================================================*/
 router.get('/blog', blogController.index);
+router.get('/blog/:title', blogController.show);
+
 
 /*===================================================================
 Admin Route

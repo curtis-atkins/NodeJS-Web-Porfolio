@@ -3,10 +3,21 @@
 @import "home";
 @import "grid";
 @import "global";
+/*
+Pages
+*/
 @import "about";
 @import "blog";
+/*
+projects
+*/
 @import "projects/index";
 @import "projects/show";
+/*
+Blog
+*/
+@import "blog/index";
+@import "blog/show";
 
 *{
 font-family: $mainFont;

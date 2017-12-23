@@ -1,0 +1,9 @@
+.blog-page,.index-page {
+  h1, p {
+    font-family: $mainFont;
+  }
+  .project-img {
+    position: relative;
+    overflow: hidden;
+  }
+}
