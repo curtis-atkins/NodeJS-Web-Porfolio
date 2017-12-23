@@ -48,9 +48,12 @@ const projects = [
   },
 ]
 
+const testingVar = process.env.DB_USERNAME
+
 projectsController.index = (req, res) => {
   res.render("projects/index", {
-    projects: projects
+    projects: projects,
+    testingVar: testingVar
   })
 }
 
