@@ -4,11 +4,31 @@ block title
   title Blogs | Curtis Atkins Portfolio
 
 block content
-  div(class="container about-page")
-    div(class="content-box")
-      div(clas="row")
-        div(class="col-md-8")
-          h1 Blogs
+  div(class="container blog-page create-page")
+    div(class="content-box col-md-12")
+      div(class="row")
+      div(class="col-md-12")
 
-          p.
-            This is My Blog Page
+        h1 Create A Blog Post
+        form(method="POST", action="/blog")
+          div(class= "blog-label")
+            label(for=title) Title:
+            div(class= "blog-text")
+            input(type="text", name="title")
+
+          div(class= "blog-label")
+            label(for=image) Image:
+            div(class= "blog-text")
+              input(type="text", name="image")
+
+          div(class= "blog-label")
+            label(for=description) Description:
+            div(class= "blog-text")
+              textarea(name="description")
+
+          div
+            button(type="submit") Submit Blog Post
+
+    div(class="col-md-4")
+      div(class="content-box")
+          include ../includes/side-ad.pug

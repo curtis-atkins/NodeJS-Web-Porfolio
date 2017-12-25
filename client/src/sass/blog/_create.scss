@@ -1,0 +1,21 @@
+.blog-page, .create-page {
+  label {
+  font-family: $mainFont;
+  display: block;
+  margin: 0 0 7px;
+  font-weight: 600;
+  }
+
+  textarea, input {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  button{
+    font-family: $mainFont;
+    font-weight: 900;
+  }
+  img{
+    width: 100%;
+
+  }
+}
